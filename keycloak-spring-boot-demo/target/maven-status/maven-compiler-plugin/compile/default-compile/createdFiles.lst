@@ -1,0 +1,5 @@
+org/keycloak/adapters/BearerTokenRequestAuthenticator$1.class
+org/keycloak/adapters/BearerTokenRequestAuthenticator.class
+io/vigoz/keycloak/demo/controller/HomeController.class
+org/keycloak/adapters/BearerTokenRequestAuthenticator$2.class
+io/vigoz/keycloak/demo/ApiApplication.class

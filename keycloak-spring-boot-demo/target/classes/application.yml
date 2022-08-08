@@ -1,0 +1,27 @@
+server:
+  port: 8181
+
+keycloak:
+  realm: springboot
+  auth-server-url: http://127.0.0.1:8080/auth
+  resource: springboot-app
+  ssl-required: external
+  credentials:
+    secret: ya2j6Tlxxx0tL3====pPzCbzQpIMWtLHBwzfffP========
+  bearer-only: true
+  use-resource-role-mappings: false
+  cors: true
+  security-constraints:
+    - authRoles:
+        - ROLE_CUSTOMER
+      securityCollections:
+        - name: customer
+          patterns:
+            - /customer
+    - authRoles:
+        - ROLE_ADMIN
+      securityCollections:
+        - name: admin
+          patterns:
+            - /admin
+            - /customer
